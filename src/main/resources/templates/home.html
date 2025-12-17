@@ -5,7 +5,13 @@
     <title>Home Page</title>
 </head>
 <body>
-    <h1 th:text="${message}"></h1>
-    <p>Current date and time: <span th:text="${date}"></span></p>
+    <!-- <h1 th:text="${message}"></h1>
+    <p>Current date and time: <span th:text="${date}"></span></p> -->
+    <h1>Bienvenido</h1>
+    <h2>Plantas disponibles</h2>
+    <h3 th:text="'Planta ' + ${name}"></h3>
+    <h3 th:text="'Fecha ' + ${pubDate}"></h3>
+    <h3 th:text="'Precio ' + ${price}"></h3>
+    <h3 th:text="'Disponibilidad ' + ${available}"></h3>
 </body>
 </html>                                    

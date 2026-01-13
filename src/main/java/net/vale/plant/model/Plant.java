@@ -2,7 +2,7 @@ package net.vale.plant.model;
 
 import java.sql.Date;
 
-public class Name {
+public class Plant {
   private Integer id;
   private String name;
   private String description;

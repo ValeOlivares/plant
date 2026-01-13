@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Listado de Plantas</title>
+</head>
+<body>
+   <h1>Listado de Plantas</h1>
+
+   <table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+            <th>Disponible</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="plant : ${plants}">
+            <td th:text="${plant.name}"></td>
+            <td th:text="${plant.description}"></td>
+            <td th:text="${plant.price}"></td>
+            <td th:text="${plant.available}"></td>
+        </tr>
+    </tbody>
+   </table>
+</body>
+</html>  
